@@ -1,4 +1,4 @@
-(defproject kosmos/kosmos-hsqldb-server "0.0.1"
+(defproject kosmos/kosmos-hsqldb-server "0.0.2-SNAPSHOT"
 
   :description "hsqldb server component"
 
