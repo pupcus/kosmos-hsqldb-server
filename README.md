@@ -2,6 +2,8 @@
 
 hsqldb server component for kosmos (used for testing purposes)
 
+[![Clojars Project](https://img.shields.io/clojars/v/kosmos/kosmos-hsqldb-server.svg)](https://clojars.org/kosmos/kosmos-hsqldb-server)
+
 ## Usage
 
 Add something like this to your kosmos config:
