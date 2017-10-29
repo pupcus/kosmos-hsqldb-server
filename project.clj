@@ -9,14 +9,14 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[kosmos "0.0.6"]
-                 [org.clojure/tools.logging "0.3.1"]
-                 [org.hsqldb/hsqldb "2.3.4"]]
+  :dependencies [[kosmos "0.0.7"]
+                 [org.clojure/tools.logging "0.4.0"]
+                 [org.hsqldb/hsqldb "2.4.0"]]
 
   :profiles {:dev {:resource-paths ["dev-resources"]
                    :dependencies   [[org.clojure/clojure "1.8.0"]
-                                    [org.clojure/java.jdbc "0.6.1"]
-                                    [org.slf4j/slf4j-log4j12 "1.7.5"]]}}
+                                    [org.clojure/java.jdbc "0.7.3"]
+                                    [org.slf4j/slf4j-log4j12 "1.7.25"]]}}
 
   :deploy-repositories [["snapshots"
                          {:url "https://clojars.org/repo"
