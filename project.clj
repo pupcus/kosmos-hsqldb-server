@@ -2,9 +2,9 @@
 
   :description "hsqldb server component"
 
-  :url "https://bitbucket.org/pupcus/kosmos-hsqldb-server"
+  :url "https://github.com/pupcus/kosmos-hsqldb-server"
 
-  :scm {:url "git@bitbucket.org:bitbucket/kosmos-hsqldb-server"}
+  :scm {:url "git@github.com:pupcus/kosmos-hsqldb-server.git"}
 
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
