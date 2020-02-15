@@ -9,17 +9,17 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[kosmos "0.0.10"]
-                 [org.clojure/tools.logging "0.5.0"]
+  :dependencies [[kosmos "0.0.11"]
+                 [org.clojure/tools.logging "0.6.0"]
                  [org.hsqldb/hsqldb "2.5.0"]]
 
   :profiles {:dev {:resource-paths ["dev-resources"]
                    :dependencies   [[org.clojure/clojure "1.10.1"]
-                                    [org.clojure/java.jdbc "0.7.10"]
-                                    [org.slf4j/slf4j-log4j12 "1.7.25"]]}}
+                                    [org.clojure/java.jdbc "0.7.11"]
+                                    [org.slf4j/slf4j-log4j12 "1.7.30"]]}}
 
-  :deploy-repositories {"releases" {:url "https://repo.clojars.org" :creds :gpg :sign-releases false}
-                        "snapshots" {:url "https://repo.clojars.org" :creds :gpg :sign-releases false}}
+  :deploy-repositories {"releases" {:url "https://clojars.org/repo" :creds :gpg :sign-releases false}
+                        "snapshots" {:url "https://clojars.org/repo" :creds :gpg :sign-releases false}}
 
   :release-tasks [["vcs" "assert-committed"]
                   ["change" "version" "leiningen.release/bump-version" "release"]
