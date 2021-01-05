@@ -9,9 +9,11 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[kosmos "0.0.11"]
-                 [org.clojure/tools.logging "0.6.0"]
-                 [org.hsqldb/hsqldb "2.5.0"]]
+  :signing {:gpg-key "FCA46A30FEEE7E10"}
+
+  :dependencies [[kosmos "0.0.12"]
+                 [org.clojure/tools.logging "1.1.0"]
+                 [org.hsqldb/hsqldb "2.5.1"]]
 
   :profiles {:dev {:resource-paths ["dev-resources"]
                    :dependencies   [[org.clojure/clojure "1.10.1"]
