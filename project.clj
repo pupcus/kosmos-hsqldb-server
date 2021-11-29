@@ -11,14 +11,14 @@
 
   :signing {:gpg-key "FCA46A30FEEE7E10"}
 
-  :dependencies [[kosmos "0.0.12"]
+  :dependencies [[kosmos "0.0.13"]
                  [org.clojure/tools.logging "1.1.0"]
-                 [org.hsqldb/hsqldb "2.5.1"]]
+                 [org.hsqldb/hsqldb "2.6.1"]]
 
   :profiles {:dev {:resource-paths ["dev-resources"]
-                   :dependencies   [[org.clojure/clojure "1.10.1"]
-                                    [org.clojure/java.jdbc "0.7.11"]
-                                    [org.slf4j/slf4j-log4j12 "1.7.30"]]}}
+                   :dependencies   [[org.clojure/clojure "1.10.3"]
+                                    [org.clojure/java.jdbc "0.7.12"]
+                                    [org.slf4j/slf4j-log4j12 "1.7.32"]]}}
 
   :deploy-repositories {"releases" {:url "https://clojars.org/repo" :creds :gpg :sign-releases false}
                         "snapshots" {:url "https://clojars.org/repo" :creds :gpg :sign-releases false}}
