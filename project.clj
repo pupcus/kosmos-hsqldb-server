@@ -11,14 +11,19 @@
 
   :signing {:gpg-key "FCA46A30FEEE7E10"}
 
+  ;; note: given that the hsqldb jars are compiled for different jdk
+  ;; versions and given classifiers they are marked as provided here
+  ;; and you will need to add the specific one you want in your
+  ;; project manually :-(
   :dependencies [[kosmos "0.0.13"]
                  [org.clojure/tools.logging "1.1.0"]
-                 [org.hsqldb/hsqldb "2.6.1"]]
+                 [org.hsqldb/hsqldb "2.6.1" :scope "provided"]]
 
   :profiles {:dev {:resource-paths ["dev-resources"]
                    :dependencies   [[org.clojure/clojure "1.10.3"]
                                     [org.clojure/java.jdbc "0.7.12"]
-                                    [org.slf4j/slf4j-log4j12 "1.7.32"]]}}
+                                    [org.slf4j/slf4j-log4j12 "1.7.32"]
+                                    [org.hsqldb/hsqldb "2.6.1" :classifier "jdk8"]]}}
 
   :deploy-repositories {"releases" {:url "https://clojars.org/repo" :creds :gpg :sign-releases false}
                         "snapshots" {:url "https://clojars.org/repo" :creds :gpg :sign-releases false}}
